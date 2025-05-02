@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Vertical Navigation Bar */
+        .vertical-nav {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 150px;
+        }
+
+        .vertical-nav h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .vertical-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .vertical-nav ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #e0f2f7; /* Light blue */
+            border-bottom: 1px solid #ccc;
+        }
+
+        .vertical-nav ul li:first-child a {
+            background-color: #ffb300; /* Orange for Home */
+        }
+
+        .vertical-nav ul li a:hover {
+            background-color: #d1e0e6;
+        }
+
+        /* Horizontal Navigation Bar */
+        .horizontal-nav {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .horizontal-nav h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .horizontal-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .horizontal-nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            background-color: #ddd;
+            border-right: 1px solid #ccc;
+        }
+
+        .horizontal-nav ul li:first-child a {
+            background-color: #a9a9a9; /* Grey for Home in horizontal bar */
+            border-left: 1px solid #ccc; /* Add left border to the first item */
+        }
+
+        .horizontal-nav ul li a:hover {
+            background-color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="vertical-nav">
+        <h2>Vertical Navigation Bar</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+
+    <div class="horizontal-nav">
+        <h2>Horizontal Navigation Bar</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

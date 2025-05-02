@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 1</title>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  table {
+    border-collapse: separate; /* Changed from collapse */
+    border-spacing: 5px;       /* Adds spacing to see rounded corners */
+    width: 50%;
+  }
+
+  th, td {
+  border: 1px solid black; /* Black border */
+  padding: 8px;
+  text-align: left;
+  background-color: #ADD8E6;
+  color: black;
+  border-radius: 10px; /* Rounded corners */
+}
+
+  th {
+    background-color: #ADD8E6;
+  }
+
+  .shapes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 15px;
+  }
+
+  .shape {
+    width: 80px;
+    height: 80px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rounded-square {
+    border-radius: 10px;
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+
+<h2>Task 1</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="shapes-grid">
+    <div class="shape rounded-square"></div>
+    <div class="shape rounded-square"></div>
+    <div class="shape rounded-square"></div>
+    <div class="shape rounded-square"></div>
+    <div class="shape rounded-square"></div>
+    <div class="shape rounded-square"></div>
+    <div class="shape circle"></div>
+    <div class="shape rounded-square"></div>
+    <div class="shape rounded-square"></div>
+</div>
+
+</body>
+</html>
